@@ -1,3 +1,16 @@
+#86A873
+#5AAA95
+#087F8C
+#095256
+https://coolors.co/095256-087f8c-5aaa95-86a873
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
