@@ -4,20 +4,20 @@ function GalleryItem(props) {
     let [view, setView] = useState(false)
     const simpleStyle = {
         'width': '25vw',
-        'height': '20vh',
-        'border': '1px solid black',
+        'height': '30vh',
+        'border': '2px solid black',
         'margin': '2px'
     }
     
     const detailStyle = {
-        'width': '80vw',
+        'width': '60vw',
         'height': '20vh',
-        'border': '1px solid black',
+        'border': '2px solid black',
         'margin': '2px',
         'backgroundImage': `url(${props.item.artworkUrl100})`,
         'backgroundRepeat': 'no-repeat',
         'backgroundSize': 'cover',
-        'color': 'yellow'
+        'color': '#087F8C'
     }
     
     const simpleView = () => {
@@ -25,6 +25,7 @@ function GalleryItem(props) {
             <div style={simpleStyle}>
                 <h3>{props.item.trackName}</h3>
                 <h4>{props.item.collectionName}</h4>
+                <img src={props.item.artworkUrl100} alt={'test'}></img>
             </div>
         )
     }
@@ -32,7 +33,7 @@ function GalleryItem(props) {
 
     const detailView = () => {
         return (
-            <div>
+            <div style={detailStyle}>
                 <h2>{props.item.trackName}</h2>
                 <h3>{props.item.collectionName}</h3>
                 <h4>{props.item.primaryGenreName}</h4>
@@ -43,7 +44,8 @@ function GalleryItem(props) {
 
     return (
         <div onClick={() => setView(!view)}
-        style={{'display': 'inline-block'}}>
+        style={{'display': 'inline'}}> 
+        {/* changed to inline instead of inline-block */}
         
             {/* This simple ternary shows the simple view when 'view' is false! */}
             {view ? detailView() : simpleView()}
