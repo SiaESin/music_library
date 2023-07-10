@@ -5,9 +5,13 @@
 https://coolors.co/095256-087f8c-5aaa95-86a873
 
 
-
-
-
+#785964
+#82A7A6
+#0A0A0A
+#9ED0E6
+https://coolors.co/785964-82a7a6-0a0a0a-9ed0e6
+#287DA4
+https://coolors.co/785964-82a7a6-0a0a0a-287da4
 
 
 
